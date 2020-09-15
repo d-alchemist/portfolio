@@ -1,0 +1,59 @@
+.home {
+    &__container {
+        // background-image: linear-gradient(75deg, #72b626 0%, #72b626 20%, #111 20%, #111 100%);
+        background-image: linear-gradient(75deg, #487911 20%, #72b626 40%, #111 50%, #111 100%);
+        height: 100vh;
+        overflow-x: hidden;
+    }
+
+    &__card {
+        width: 28rem;
+        height: 37rem;
+        border-radius: 2rem;
+        overflow: hidden;
+        border: none;
+    }
+
+    &__helloText {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    &__name {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 2;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-size: 1rem;
+        line-height: 2;
+    }
+
+    &__button {
+        border-radius: 2rem;
+        width: 12rem;
+        height: 3rem;
+        position: relative;
+
+        &:hover {
+            animation: blink 1s infinite;
+        }
+    }
+}
+
+@keyframes blink {
+    0% {
+        background-color: #72b626;
+    }
+
+    50% {
+        background-color: #72b626;
+    }
+
+    100% {
+        background-color: #111;
+    }
+}

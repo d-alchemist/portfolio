@@ -1,0 +1,17 @@
+@import "./custom.scss";
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #111;
+  color: #fff;
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+.open-sans-font {
+  font-family: 'Open Sans', sans-serif;
+}
+
+$myPrimary: #72b626;
