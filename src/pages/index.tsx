@@ -1,8 +1,6 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import { Container, Row, Col } from 'react-bootstrap';
-import man from '../assets/images/man.jpg';
-// import men from '../assets/images/me.jpeg';
 import './styles/home.scss';
 import Navigation from '../components/Navigation';
 import { Button } from 'react-bootstrap';
@@ -12,9 +10,7 @@ const Homepage: React.FC = () => {
 		<Container fluid className="home__container pt-5 pl-5 pr-2">
 			<Row>
 				<Col className="flex-grow-0">
-					<Card className="home__card shadow-lg bg-white">
-						<Card.Img src={man} /> 
-					</Card>
+					<Card className="home__card shadow-lg bg-transparent"></Card>
 				</Col>
 				<Col xs={6} className="position-relative">
 					<div
@@ -25,7 +21,7 @@ const Homepage: React.FC = () => {
 							Hello There!
 						</h6>
 						<h1 className="home__name poppins-font text-primary">
-							<span className="text-light">I'm</span> Someone Someone
+							<span className="text-light">I'm</span> Chilo Nwokolo
 						</h1>
 						<p className="home__text">
 							I'm a Nigerian based web designer & front‑end developer

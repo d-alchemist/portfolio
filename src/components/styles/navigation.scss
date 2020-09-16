@@ -1,3 +1,6 @@
+.active {
+    background-color: #73b626;
+}
 .nav {
     margin: 0;
     padding: 0;
@@ -12,6 +15,7 @@
         pointer-events: none;
         top: .5rem;
         left: 1.5rem;
+        color: #fff;
     }
 
     &__item {
