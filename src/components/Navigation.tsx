@@ -8,6 +8,7 @@ import {
 	faUser,
 } from '@fortawesome/free-solid-svg-icons';
 
+
 import './styles/navigation.scss';
 
 const Navigation: React.FC = () => {
