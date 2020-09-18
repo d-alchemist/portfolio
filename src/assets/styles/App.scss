@@ -15,3 +15,10 @@ body {
 }
 
 $myPrimary: #72b626;
+
+.navigationbar {
+  position: fixed;
+  right: 6rem;
+  top: 50%;
+  transform: translateY(-50%);
+}

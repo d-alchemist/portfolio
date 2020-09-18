@@ -2,7 +2,6 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import { Container, Row, Col } from 'react-bootstrap';
 import './styles/home.scss';
-import Navigation from '../components/Navigation';
 import { Button } from 'react-bootstrap';
 
 const Homepage: React.FC = () => {
@@ -34,10 +33,7 @@ const Homepage: React.FC = () => {
 							<Button variant="primary" className="home__button">Let's talk</Button>
 						</div>
 					</div>
-				</Col>
-				<Col className="d-flex justify-content-end" xs={1}>
-					<Navigation />
-				</Col>
+				</Col>	
 			</Row>
 		</Container>
 	);

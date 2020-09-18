@@ -7,7 +7,7 @@ import {
 	faEnvelope,
 	faUser,
 } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import './styles/navigation.scss';
 
@@ -18,46 +18,46 @@ const Navigation: React.FC = () => {
 				className="nav d-flex flex-column position-absolute"
 				style={{ top: '50%', transform: 'translate(0, -50%)' }}
 			>
-				<Link to={'/'}>
+				<NavLink exact activeClassName="active" to={'/'}>
 					<li className="nav__item">
 						<FontAwesomeIcon icon={faHome} className="nav__icon" />
-						<span className="nav__link active">
+						<span className="nav__link">
 							<span className="nav__link--text">Home</span>
 						</span>
 					</li>
-				</Link>
-				<Link to={'/about'}>
+				</NavLink>
+				<NavLink activeClassName="active" to={'/about'}>
 					<li className="nav__item">
 						<FontAwesomeIcon icon={faUser} className="nav__icon" />
 						<span className="nav__link">
 							<span className="nav__link--text">About</span>
 						</span>
 					</li>
-				</Link>
-				<Link to={'/portfolio'}>
+				</NavLink>
+				<NavLink activeClassName="active" to={'/portfolio'}>
 					<li className="nav__item">
 						<FontAwesomeIcon icon={faBriefcase} className="nav__icon" />
 						<span className="nav__link">
 							<span className="nav__link--text">Portfolio</span>
 						</span>
 					</li>
-				</Link>
-				<Link to={'/contact'}>
+				</NavLink>
+				<NavLink activeClassName="active" to={'/contact'}>
 					<li className="nav__item">
 						<FontAwesomeIcon icon={faEnvelope} className="nav__icon" />
 						<span className="nav__link">
 							<span className="nav__link--text">Contact</span>
 						</span>
 					</li>
-				</Link>
-				<Link to={'/blog'}>
+				</NavLink>
+				<NavLink activeClassName="active" to={'/blog'}>
 					<li className="nav__item">
 						<FontAwesomeIcon icon={faComment} className="nav__icon" />
 						<span className="nav__link">
 							<span className="nav__link--text">Blog</span>
 						</span>
 					</li>
-				</Link>
+				</NavLink>
 			</ul>
 		</nav>
 	);

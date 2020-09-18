@@ -1,6 +1,7 @@
 import React from 'react';
 import './assets/styles/App.scss';
 import { Route, Switch } from 'react-router-dom';
+import Navigation from './components/Navigation';
 
 import Homepage from './pages';
 import About from './pages/about';
@@ -28,6 +29,9 @@ function App() {
 					<Portfolio />
 				</Route>
 			</Switch>
+			<div className="navigationbar">
+				<Navigation />
+			</div>
 		</div>
 	);
 }
