@@ -21,41 +21,41 @@ const Navigation: React.FC = () => {
 				<Link to={'/'}>
 					<li className="nav__item">
 						<FontAwesomeIcon icon={faHome} className="nav__icon" />
-						<a className="nav__link active" href="#home">
+						<span className="nav__link active">
 							<span className="nav__link--text">Home</span>
-						</a>
+						</span>
 					</li>
 				</Link>
 				<Link to={'/about'}>
 					<li className="nav__item">
 						<FontAwesomeIcon icon={faUser} className="nav__icon" />
-						<a className="nav__link" href="#about">
+						<span className="nav__link">
 							<span className="nav__link--text">About</span>
-						</a>
+						</span>
 					</li>
 				</Link>
 				<Link to={'/portfolio'}>
 					<li className="nav__item">
 						<FontAwesomeIcon icon={faBriefcase} className="nav__icon" />
-						<a className="nav__link" href="#portfolio">
+						<span className="nav__link">
 							<span className="nav__link--text">Portfolio</span>
-						</a>
+						</span>
 					</li>
 				</Link>
 				<Link to={'/contact'}>
 					<li className="nav__item">
 						<FontAwesomeIcon icon={faEnvelope} className="nav__icon" />
-						<a className="nav__link" href="#contact">
+						<span className="nav__link">
 							<span className="nav__link--text">Contact</span>
-						</a>
+						</span>
 					</li>
 				</Link>
 				<Link to={'/blog'}>
 					<li className="nav__item">
 						<FontAwesomeIcon icon={faComment} className="nav__icon" />
-						<a className="nav__link" href="#blog">
+						<span className="nav__link">
 							<span className="nav__link--text">Blog</span>
-						</a>
+						</span>
 					</li>
 				</Link>
 			</ul>
