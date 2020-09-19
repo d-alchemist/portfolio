@@ -1,8 +1,16 @@
 @import "./custom.scss";
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #111;
@@ -11,14 +19,14 @@ body {
 }
 
 .open-sans-font {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 $myPrimary: #72b626;
 
 .navigationbar {
   position: fixed;
-  right: 6rem;
+  right: 5rem;
   top: 50%;
   transform: translateY(-50%);
 }

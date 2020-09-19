@@ -1,9 +1,10 @@
 import React from 'react';
+import { style } from '../utils/constants';
 
 const Portfolio: React.FC = () => {
 	return (
-		<div>
-			<h1> Hello From Portfolio Page </h1>
+		<div style={style}>
+			<h1> Portfolio Page </h1>
 		</div>
 	);
 };
