@@ -8,15 +8,15 @@ const Homepage: React.FC = () => {
 	return (
 		<Container fluid className="home__container pt-5 pl-5 pr-2">
 			<Row>
-				<Col className="flex-grow-0">
-					<Card className="home__card shadow-lg bg-transparent"></Card>
+				<Col md={12} lg={5} className="home__image flex-grow-0">
+					<Card className="home__card shadow-lg"></Card>
 				</Col>
-				<Col xs={6} className="position-relative">
+				<Col xs={12} md={12} lg={6} className="home__introduction position-relative">
 					<div
 						className="position-absolute pr-4"
 						style={{ top: '50%', transform: 'translate(0, -50%)' }}
 					>
-						<h6 className="home__helloText d-block mb-0 open-sans-font d-sm-none d-lg-block">
+						<h6 className="home__helloText d-block mb-0 open-sans-font d-sm-none d-lg-block d-xs-none">
 							Hello There!
 						</h6>
 						<h1 className="home__name poppins-font text-primary">
