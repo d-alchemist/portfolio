@@ -1,0 +1,98 @@
+.moving {
+
+    &__cube {
+        height: 20px;
+    }
+
+    &__cube {
+
+        &-one {
+            transform: translateX(17px) translateY(98px) translateZ(0px);
+            position: relative;
+            z-index: 2;
+            animation: moveone 5s linear infinite reverse;
+    
+            & .side1 {
+                background-color: yellow;
+            }
+
+            & .side2, .side3 {
+                background-color: yellow;
+            }
+            
+        }
+
+        &-two {
+            transform: translateX(-15px) translateY(20px) translateZ(-2px);
+            animation: movetwo 5s linear infinite reverse;
+
+            & .side3 {
+                background-color: #90d643;
+            }
+        }
+
+        &-three {
+            transform: translateX(46px) translateY(-93px) translateZ(0px);
+            animation: movethree 5s linear infinite reverse;
+
+            & .side2 {
+                background-color: #90d643;
+            }
+        }
+    
+        &-four {
+            transform: translateX(0px) translateY(-116px) translateZ(-2px);
+            // animation: movefour 5s linear infinite reverse;
+        }
+        
+    }
+
+}
+
+@keyframes moveone {
+    0% {
+        transform: translateX(17px) translateY(98px) translateZ(0px);
+    }
+    50% {
+        transform: translateX(17px) translateY(48px) translateZ(0px);
+    }
+    100% {
+        transform: translateX(17px) translateY(98px) translateZ(0px);
+    }
+}
+
+@keyframes movetwo {
+    0% {
+        transform: translateX(-15px) translateY(20px) translateZ(-2px);
+    }
+    50% {
+        transform: translateX(-65px) translateY(20px) translateZ(-2px);
+    }
+    100% {
+        transform: translateX(-15px) translateY(20px) translateZ(-2px);
+    }
+}
+
+@keyframes movethree {
+    0% {
+        transform: translateX(46px) translateY(-93px) translateZ(0px);
+    }
+    50% {
+        transform: translateX(116px) translateY(-93px) translateZ(0px);
+    }
+    100% {
+        transform: translateX(46px) translateY(-93px) translateZ(0px);
+    }
+}
+
+@keyframes movefour {
+    0% {
+        transform: translateX(0px) translateY(-116px) translateZ(-2px);
+    }
+    50% {
+        transform: translateX(50px) translateY(-116px) translateZ(-2px);
+    }
+    100% {
+        transform: translateX(0px) translateY(-116px) translateZ(-2px);
+    }
+}

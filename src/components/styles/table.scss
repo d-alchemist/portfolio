@@ -1,0 +1,41 @@
+.table {
+    height: 50px;
+    width: 200px;
+    transform-style: preserve-3d;
+    top: 3rem;
+    position: relative;
+    transform: rotateX(-22deg) rotateY(-38deg) rotateZ(0deg) translateX(-110px);
+    margin: auto;
+    transition: all .5s ease-in-out;
+}
+
+.table > div:not(:first-child) {
+    position: absolute;
+    transition: all .5s ease-in-out;
+    width: 250px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.table .tableSide1 {
+    position: absolute;
+    transition: all .5s ease-in-out;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.tableSide1 {
+    transform: rotateX(90deg) translateX(-39px) translateY(-43px) translateZ(132px);
+    background-color: #fff;
+}
+
+.tableSide2 {
+    transform: translateX(-50px) translateY(0px) translateZ(68px);
+    background-color: #99e048;
+}
+
+.tableSide3 {
+    transform: rotateY(90deg) translateX(47px) translateY(-5px) translateZ(83px);
+    background-color: #99e048;
+}

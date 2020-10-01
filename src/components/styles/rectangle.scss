@@ -1,0 +1,43 @@
+@mixin rectangleShape {
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    height: 50px;
+    float: left;
+    overflow: hidden;
+    opacity: 1;
+}
+
+.rectangle {
+    width: 180px;
+    height: 50px;
+    transform-style: preserve-3d;
+    transform: rotateX(-22deg) rotateY(-38deg) rotateZ(0deg) translate(25px, -101px);
+    margin: auto;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+
+    & > div:not(.rectangle__side3) {
+        @include rectangleShape();
+        width: 178px;
+    }
+
+    & > &__side3 {
+        @include rectangleShape();
+        width: 50px;
+    }
+
+    &__side1 {
+        transform: rotateX(90deg) translateX(0px) translateY(0px) translateZ(56px);
+        background-color: #b9f475;
+    }
+
+    &__side2 {
+        transform: translateX(0px) translateY(-31px) translateZ(24px);
+        background-color: #99e048;
+    }
+
+    &__side3 {
+        transform: rotateY(90deg) translateX(163px) translateY(53px) translateZ(25px);
+        background-color: #99e048;
+    }
+}

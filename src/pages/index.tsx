@@ -1,15 +1,36 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card';
 import { Container, Row, Col } from 'react-bootstrap';
 import './styles/home.scss';
 import { Button } from 'react-bootstrap';
+// import image from '../assets/images/carbon.png';
+import Cube from '../components/Cube';
+import Table from '../components/Table';
+import MovingCube from '../components/MovingCube';
+import Rectangle from '../components/Rectangle';
+
+const tripleCube = (
+	<React.Fragment>
+		<div className="home__cube-one">
+			<Cube />
+		</div>
+		<div className="home__cube-two">
+			<Cube />
+		</div>
+		<div className="home__cube-three">
+			<Cube />
+		</div>
+	</React.Fragment>
+);
 
 const Homepage: React.FC = () => {
 	return (
 		<Container fluid className="home__container pt-5 pl-5 pr-2">
-			<Row>
-				<Col md={12} lg={5} className="home__image flex-grow-0">
-					<Card className="home__card shadow-lg"></Card>
+			<Row style={{ height: '100%' }}>
+				<Col md={12} lg={5} className="home__image">
+					<MovingCube />
+					<div className="home__triplecube-one">{tripleCube}</div>
+					<Table />
+					<Rectangle />
 				</Col>
 				<Col xs={12} md={12} lg={6} className="home__introduction position-relative">
 					<div
@@ -29,11 +50,15 @@ const Homepage: React.FC = () => {
 							lives of those around me
 						</p>
 						<div className="d-flex justify-content-end pr-3 pt-2">
-							<Button variant="primary" className="home__button mr-3">More About Me</Button>
-							<Button variant="primary" className="home__button">Let's talk</Button>
+							<Button variant="primary" className="home__button mr-3">
+								More About Me
+							</Button>
+							<Button variant="primary" className="home__button">
+								Let's talk
+							</Button>
 						</div>
 					</div>
-				</Col>	
+				</Col>
 			</Row>
 		</Container>
 	);

@@ -227,6 +227,22 @@ $myprimary: #73b626;
             text-decoration: none;
         }
     }
+
+    @media (max-width: 700px) {
+        width: 100vw;
+    }
+
+
+    @media (max-width: 700px) {
+        &__background-show {
+            width: 100vw;
+        }
+
+        &__item {
+            width: 22rem;
+        }
+            
+    }
 }
 
 .active * span.navigation__link {

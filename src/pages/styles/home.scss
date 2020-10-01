@@ -1,7 +1,15 @@
 .home {
     &__container {
         // background-image: linear-gradient(75deg, #72b626 0%, #72b626 20%, #111 20%, #111 100%);
-        background-image: linear-gradient(75deg, #395c10 10%, #487911 20%, #5c9916 30%,#72b626 40%, #111 50%, #111 100%);
+        background-image: linear-gradient(
+            75deg,
+            #395c10 10%,
+            #487911 20%,
+            #5c9916 30%,
+            #72b626 40%,
+            #111 50%,
+            #111 100%
+        );
         height: 100vh;
         overflow-x: hidden;
     }
@@ -28,7 +36,7 @@
         font-weight: 500;
         @media (max-width: 480px) {
             opacity: 0;
-            }
+        }
     }
 
     &__name {
@@ -38,8 +46,8 @@
         text-transform: uppercase;
 
         @media (max-width: 480px) {
-        line-height: 1.5;
-        text-align: center;
+            line-height: 1.5;
+            text-align: center;
         }
     }
 
@@ -75,6 +83,26 @@
     &__image {
         @media (max-width: 993px) {
             padding-right: 4rem;
+        }
+    }
+
+    &__cube-one {
+        transform: translateX(-3px) translateY(76px) translateZ(0px);
+    }
+
+    &__cube-two {
+        transform: translateX(-32px) translateY(24px) translateZ(-2px);
+    }
+
+    &__cube-three {
+        transform: translateX(37px) translateY(-92px) translateZ(0px);
+    }
+
+    &__triplecube {
+        &-one {
+            position: relative;
+            z-index: 10;
+            transform: translateX(-156px) translateY(145px);
         }
     }
 }
