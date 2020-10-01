@@ -13,6 +13,7 @@
     transform-style: preserve-3d;
     transform: rotateX(-22deg) rotateY(-38deg) rotateZ(0deg) translate(25px, -101px);
     margin: auto;
+    z-index: 2;
     position: relative;
     transition: all 0.5s ease-in-out;
 

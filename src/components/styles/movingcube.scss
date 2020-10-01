@@ -41,7 +41,9 @@
         }
     
         &-four {
-            transform: translateX(0px) translateY(-116px) translateZ(-2px);
+            position: relative;
+            z-index: 1;
+            transform: translateX(-62px) translateY(-96px) translateZ(7px);
             // animation: movefour 5s linear infinite reverse;
         }
         
